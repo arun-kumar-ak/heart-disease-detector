@@ -2,9 +2,14 @@ fieldset {
     width: 50%;
     margin-top: 1%;
     background-color: linear-gradient(280deg,rgb(0, 133, 133),rgb(74, 54, 138),rgb(175, 7, 223));
-    border: 2px solid black;
-    padding-left: 10%;
-    padding-right: 10%;
+    border: 2px solid black;    
+}
+
+input {
+  border-radius: 0;
+  outline: 0;
+  border: 1px solid black;
+  padding: 7px 4px;
 }
 
 legend {
@@ -28,6 +33,10 @@ hr {
     margin-bottom: 5%;
 }
 
+#age-label {
+  margin-top: 10px;
+}
+
 .App {
   width: 100%;
   display: flex;
@@ -37,9 +46,11 @@ hr {
   background-image: linear-gradient(140deg,rgb(0, 133, 133),rgb(74, 54, 138),rgb(175, 7, 223));
 }
 
-.button {
-    margin-top: 1%;
-    margin-bottom: 2%;
+#button {
+    margin-top: 30%;
+    margin-bottom: 40%;
+    padding: 8px 30px;
+    outline: none;
 }
 
 .font {
@@ -47,7 +58,7 @@ hr {
 }
 
 .slider {
-  margin-top: 6%;
+  margin-left: 4%;
 }
 
 input::-webkit-outer-spin-button,
@@ -60,8 +71,13 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-@media screen and (max-width: 360px) ,(min-width: 420px) {
+@media screen and (max-width: 360px) , (max-width: 420px) {
   h1 {
     font-size: 1.5em;
+  }
+
+  fieldset {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }

@@ -59,12 +59,17 @@ class App extends Component {
 
 
   render() {
+    // const inline = {
+    //   margin-bottom = "10px"
+    // }
     return (
       <div className="App">
         <h1>HEART DISEASE DETECTOR</h1>
         <fieldset>
           <legend><b>Age</b></legend>
-          <input placeholder="ENTER YOUR AGE" onChange={(Event)=>{this.setState({age_value:Event.target.value})}}></input><br />
+          <label>Enter Your Age:</label><br />
+          <input type="number" id="age-label" value={this.state.age_value}></input>
+          <input type="range" min="1" className="slider" max="100" step="1" onChange={(Event)=>{this.setState({age_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
           <legend><b>Sex</b></legend>
@@ -81,11 +86,12 @@ class App extends Component {
             2: Non-anginal pain: typically esophageal spasms (non heart related)<hr /><br />
             3: Asymptomatic: chest pain not showing signs of disease<hr /> <br />
           </label>
-          <input placeholder="ENTER A NUMBER" type="number" min="0" max="3" step="1" onChange={(Event)=>{this.setState({cp_value:Event.target.value})}}></input><br />
+          <input type="number" value={this.state.cp_value}></input>
+          <input type="range" min="0" max="3" step="1" className="slider" onChange={(Event)=>{this.setState({cp_value:Event.target.value})}}></input>
         </fieldset>
         <fieldset>
           <legend><b>trestbps</b></legend>
-          <input value={this.state.trestbps_value} onChange={(Event)=>{this.setState({trestbps_value:Event.target.value})}}></input>
+          <input type="number" value={this.state.trestbps_value} onChange={(Event)=>{this.setState({trestbps_value:Event.target.value})}}></input>
           <input type="range" min="94" className="slider" max="200" step="1" onChange={(Event)=>{this.setState({trestbps_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
@@ -102,7 +108,8 @@ class App extends Component {
         </fieldset>
         <fieldset>
           <legend><b>restecg</b></legend>            
-          <input  type="number" min="0" max="2" step="1" onChange={(Event)=>{this.setState({restecg_value:Event.target.value})}}></input><br />
+          <input  type="number" value={this.state.restecg_value}></input>
+          <input type="range" className="slider" min="0" max="2" step="1" onChange={(Event)=>{this.setState({restecg_value:Event.target.value})}}></input>
         </fieldset>
         <fieldset>
           <legend><b>thalach</b></legend>            
@@ -123,18 +130,21 @@ class App extends Component {
         </fieldset>
         <fieldset>
           <legend><b>slope</b></legend>            
-          <input type="number" min="0" max="2" step="1" onChange={(Event)=>{this.setState({slope_value:Event.target.value})}}></input><br />
+          <input type="number" value={this.state.slope_value}></input>
+          <input type="range" className="slider" min="0" max="2" step="1" onChange={(Event)=>{this.setState({slope_value:Event.target.value})}}></input>
         </fieldset>
         <fieldset>
           <legend><b>ca</b></legend>            
-          <input  type="number" min="0" max="4" step="1" onChange={(Event)=>{this.setState({ca_value:Event.target.value})}}></input><br />
+          <input  type="number" value={this.state.ca_value}></input>
+          <input type="range" className="slider" min="0" max="4" step="1" onChange={(Event)=>{this.setState({ca_value:Event.target.value})}}></input>
         </fieldset>
         <fieldset>
           <legend><b>thal</b></legend>            
-          <input  type="number" min="0" max="3" step="1" onChange={(Event)=>{this.setState({thal_value:Event.target.value})}}></input><br />
+          <input  type="number" value={this.state.thal_value}></input>
+          <input type="range" className="slider" min="0" max="3" step="1" onChange={(Event)=>{this.setState({thal_value:Event.target.value})}}></input>
         </fieldset>
-        <div className= "button">  
-          <button onClick={this.onsubmitpredict}>Predict</button>          
+        <div>  
+          <button id= "button" onClick={this.onsubmitpredict}>Predict</button>          
         </div>
         <div id="output">
           <span >{this.state.output}</span>
