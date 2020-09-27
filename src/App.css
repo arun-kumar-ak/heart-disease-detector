@@ -3,6 +3,8 @@ fieldset {
     margin-top: 1%;
     background-color: linear-gradient(280deg,rgb(0, 133, 133),rgb(74, 54, 138),rgb(175, 7, 223));
     border: 2px solid black;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 legend {
@@ -13,6 +15,12 @@ h1 {
   font-family: 'Satisfy', cursive;
   font-size: 60px;
   color: black;
+}
+
+hr {
+  border: 1.5px solid rgb(27, 168, 133);
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 #output {
@@ -34,6 +42,14 @@ h1 {
     margin-bottom: 2%;
 }
 
+.font {
+  font-size: 14px;
+}
+
+.slider {
+  margin-top: 6%;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -42,4 +58,10 @@ input::-webkit-inner-spin-button {
 
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+@media screen and (max-width: 360px) ,(min-width: 420px) {
+  h1 {
+    font-size: 1.5em;
+  }
 }

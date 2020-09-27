@@ -75,23 +75,23 @@ class App extends Component {
         </fieldset>
         <fieldset>
           <legend><b>Chest Pain Type</b></legend>
-          <label>              
-            <span />0: Typical angina: chest pain related decrease blood supply to the heart<br />
-            <span />1: Atypical angina: chest pain not related to heart<br />
-            <span />2: Non-anginal pain: typically esophageal spasms (non heart related)<br />
-            <span />3: Asymptomatic: chest pain not showing signs of disease <br />
+          <label className="font">              
+            0: Typical angina: chest pain related decrease blood supply to the heart<hr /><br />
+            1: Atypical angina: chest pain not related to heart<hr /><br />
+            2: Non-anginal pain: typically esophageal spasms (non heart related)<hr /><br />
+            3: Asymptomatic: chest pain not showing signs of disease<hr /> <br />
           </label>
           <input placeholder="ENTER A NUMBER" type="number" min="0" max="3" step="1" onChange={(Event)=>{this.setState({cp_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
           <legend><b>trestbps</b></legend>
           <input value={this.state.trestbps_value} onChange={(Event)=>{this.setState({trestbps_value:Event.target.value})}}></input>
-          <input type="range" min="94" max="200" step="1" onChange={(Event)=>{this.setState({trestbps_value:Event.target.value})}}></input><br />
+          <input type="range" min="94" className="slider" max="200" step="1" onChange={(Event)=>{this.setState({trestbps_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
           <legend><b>cholestrol</b></legend>
           <input value={this.state.chol_value} onChange={(Event)=>{this.setState({chol_value:Event.target.value})}}></input>
-          <input type="range" min="126" max="564" step="1" onChange={(Event)=>{this.setState({chol_value:Event.target.value})}}></input><br />
+          <input className="slider" type="range" min="126" max="564" step="1" onChange={(Event)=>{this.setState({chol_value:Event.target.value})}}></input><br />
         </fieldset>            
         <fieldset>
           <legend><b>fasting blood sugar</b></legend>            
@@ -107,7 +107,7 @@ class App extends Component {
         <fieldset>
           <legend><b>thalach</b></legend>            
           <input value={this.state.thalach_value} onChange={(Event)=>{this.setState({thalach_value:Event.target.value})}}></input>
-          <input type="range" min="71" max="202" step="1" onChange={(Event)=>{this.setState({thalach_value:Event.target.value})}}></input><br />
+          <input className="slider" type="range" min="71" max="202" step="1" onChange={(Event)=>{this.setState({thalach_value:Event.target.value})}}></input><br />
         </fieldset>      
         <fieldset>
           <legend><b>exang</b></legend>          
@@ -119,11 +119,11 @@ class App extends Component {
         <fieldset>
           <legend><b>Oldpeak</b></legend>            
           <input value={this.state.oldpeak_value} onChange={(Event)=>{this.setState({oldpeak_value:Event.target.value})}}></input>
-          <input type="range" min="0" max="6.2" step="0.2" onChange={(Event)=>{this.setState({oldpeak_value:Event.target.value})}}></input><br />
+          <input className="slider" type="range" min="0" max="6.2" step="0.2" onChange={(Event)=>{this.setState({oldpeak_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
           <legend><b>slope</b></legend>            
-          <input  type="number" min="0" max="2" step="1" onChange={(Event)=>{this.setState({slope_value:Event.target.value})}}></input><br />
+          <input type="number" min="0" max="2" step="1" onChange={(Event)=>{this.setState({slope_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
           <legend><b>ca</b></legend>            
