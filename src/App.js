@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   onsubmitpredict = () => {
-    fetch('http://127.0.0.1:1812/predict',{
+    fetch('https://flask-server-fs.herokuapp.com/predict',{
         method: 'POST',
         headers: {'content-type': 'application/json'},
         body: JSON.stringify({
@@ -52,7 +52,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('http://127.0.0.1:1812/')
+    fetch('https://flask-server-fs.herokuapp.com/')
         .then(Response => Response.json())
         .then(console.log)
   }
