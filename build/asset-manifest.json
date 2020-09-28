@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/heart-disease-detector/static/css/main.c864c64f.chunk.css",
-    "main.js": "/heart-disease-detector/static/js/main.b941d232.chunk.js",
-    "main.js.map": "/heart-disease-detector/static/js/main.b941d232.chunk.js.map",
+    "main.css": "/heart-disease-detector/static/css/main.5b413726.chunk.css",
+    "main.js": "/heart-disease-detector/static/js/main.51f59a94.chunk.js",
+    "main.js.map": "/heart-disease-detector/static/js/main.51f59a94.chunk.js.map",
     "runtime-main.js": "/heart-disease-detector/static/js/runtime-main.7aa18e3b.js",
     "runtime-main.js.map": "/heart-disease-detector/static/js/runtime-main.7aa18e3b.js.map",
     "static/js/2.5ddc51a2.chunk.js": "/heart-disease-detector/static/js/2.5ddc51a2.chunk.js",
     "static/js/2.5ddc51a2.chunk.js.map": "/heart-disease-detector/static/js/2.5ddc51a2.chunk.js.map",
     "index.html": "/heart-disease-detector/index.html",
-    "precache-manifest.dc308945c63ae9257653f5816144be1d.js": "/heart-disease-detector/precache-manifest.dc308945c63ae9257653f5816144be1d.js",
+    "precache-manifest.621b5ebefd849a33328fba32be3f2c31.js": "/heart-disease-detector/precache-manifest.621b5ebefd849a33328fba32be3f2c31.js",
     "service-worker.js": "/heart-disease-detector/service-worker.js",
-    "static/css/main.c864c64f.chunk.css.map": "/heart-disease-detector/static/css/main.c864c64f.chunk.css.map",
+    "static/css/main.5b413726.chunk.css.map": "/heart-disease-detector/static/css/main.5b413726.chunk.css.map",
     "static/js/2.5ddc51a2.chunk.js.LICENSE.txt": "/heart-disease-detector/static/js/2.5ddc51a2.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7aa18e3b.js",
     "static/js/2.5ddc51a2.chunk.js",
-    "static/css/main.c864c64f.chunk.css",
-    "static/js/main.b941d232.chunk.js"
+    "static/css/main.5b413726.chunk.css",
+    "static/js/main.51f59a94.chunk.js"
   ]
 }

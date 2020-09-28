@@ -87,24 +87,46 @@ class App extends Component {
           <input type="range" min="0" max="3" step="1" className="slider" onChange={(Event)=>{this.setState({cp_value:Event.target.value})}}></input>
         </fieldset>
         <fieldset>
-          <legend><b>trestbps</b></legend>
+          <legend><b>Resting Blood Pressure</b></legend>
+          <label className="font">
+            Resting blood pressure (in mm Hg on admission to the hospital) anything above 130-140 is typically cause for concern.<hr /><br />
+            Minimum : 94<br />
+            25% : 120<br />
+            50% : 130<br />
+            75% : 140<br />
+            Maximum : 200<hr />
+          </label><br />
           <input type="number" value={this.state.trestbps_value} onChange={(Event)=>{this.setState({trestbps_value:Event.target.value})}}></input>
           <input type="range" min="94" className="slider" max="200" step="1" onChange={(Event)=>{this.setState({trestbps_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
           <legend><b>cholestrol</b></legend>
+          <label className="font">
+            The person’s cholesterol measurement in mg/dl - above 200 is cause for concern.<hr /><br />
+            Minimum : 126<br />
+            25% : 211<br />
+            50% : 240<br />
+            75% : 275<br />
+            Maximum : 564<hr />
+          </label>
           <input value={this.state.chol_value} onChange={(Event)=>{this.setState({chol_value:Event.target.value})}}></input>
           <input className="slider" type="range" min="126" max="564" step="1" onChange={(Event)=>{this.setState({chol_value:Event.target.value})}}></input><br />
         </fieldset>            
         <fieldset>
-          <legend><b>fasting blood sugar</b></legend>            
+          <legend><b>Fasting blood sugar</b></legend>            
           <span /><label htmlFor="fbs_no" >No</label>
           <input  type="radio" name="fbs" value={0} onChange={(Event)=>{this.setState({fbs_value:Event.target.value})}}></input>
           <label htmlFor="fbs_yes">Yes</label>
           <input  type="radio" name="fbs" value={1} onChange={(Event)=>{this.setState({fbs_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
-          <legend><b>restecg</b></legend>            
+          <legend><b>restecg</b></legend>      
+          <label className="font">
+            Resting electrocardiographic results:<hr /><br />
+            0 : Normal<br />
+            1 : having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)<br />
+            2 : showing probable or definite left ventricular hypertrophy by Estes' criteria<hr />
+          </label>      
           <input  type="number" value={this.state.restecg_value}></input>
           <input type="range" className="slider" min="0" max="2" step="1" onChange={(Event)=>{this.setState({restecg_value:Event.target.value})}}></input>
         </fieldset>
