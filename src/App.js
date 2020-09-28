@@ -59,16 +59,13 @@ class App extends Component {
 
 
   render() {
-    // const inline = {
-    //   margin-bottom = "10px"
-    // }
     return (
       <div className="App">
         <h1>HEART DISEASE DETECTOR</h1>
         <fieldset>
           <legend><b>Age</b></legend>
           <label>Enter Your Age:</label><br />
-          <input type="number" id="age-label" value={this.state.age_value}></input>
+          <input id="age-label" value={this.state.age_value}></input>
           <input type="range" min="1" className="slider" max="100" step="1" onChange={(Event)=>{this.setState({age_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
@@ -125,7 +122,7 @@ class App extends Component {
         </fieldset>
         <fieldset>
           <legend><b>Oldpeak</b></legend>            
-          <input value={this.state.oldpeak_value} onChange={(Event)=>{this.setState({oldpeak_value:Event.target.value})}}></input>
+          <input type="number" value={this.state.oldpeak_value}></input>
           <input className="slider" type="range" min="0" max="6.2" step="0.2" onChange={(Event)=>{this.setState({oldpeak_value:Event.target.value})}}></input><br />
         </fieldset>
         <fieldset>
@@ -143,12 +140,12 @@ class App extends Component {
           <input  type="number" value={this.state.thal_value}></input>
           <input type="range" className="slider" min="0" max="3" step="1" onChange={(Event)=>{this.setState({thal_value:Event.target.value})}}></input>
         </fieldset>
-        <div>  
-          <button id= "button" onClick={this.onsubmitpredict}>Predict</button>          
-        </div>
         <div id="output">
           <span >{this.state.output}</span>
         </div>
+        <div>  
+          <button id= "button" onClick={this.onsubmitpredict}>Predict</button>          
+        </div>        
       </div>
     );
   }
