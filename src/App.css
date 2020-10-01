@@ -50,6 +50,10 @@ hr {
     margin-bottom: 40%;
     padding: 8px 30px;
     outline: none;
+    border: none;
+    color: blanchedalmond;
+    font-weight: 900;
+    background-image: linear-gradient(270deg, rgb(0, 133, 133),rgb(73, 68, 75));
 }
 
 .font {
@@ -60,10 +64,6 @@ hr {
   margin-left: 4%;
 }
 
-.equal {
-  padding-left: 14.5%;
-  padding-right: 14.5%;
-}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -75,7 +75,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-@media screen and (max-width: 360px) , (max-width: 420px) {
+@media screen and (max-width: 330px) , (max-width: 420px) {
   h1 {
     font-size: 1.5em;
   }
@@ -83,5 +83,11 @@ input[type=number] {
   fieldset {
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .equal {
+    padding-left: 36px;
+    padding-right: 37.5px;
+    width: 213px;
   }
 }

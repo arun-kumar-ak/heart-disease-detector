@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b370bdd14ea42977180453edb1d97b72",
+    "revision": "b9298fb515abcf1a178253f829981bb6",
     "url": "/heart-disease-detector/index.html"
   },
   {
-    "revision": "7ff4d13b01d0cda111d4",
-    "url": "/heart-disease-detector/static/css/main.5b413726.chunk.css"
+    "revision": "91dc553a93a597bdb604",
+    "url": "/heart-disease-detector/static/css/main.e6b24a75.chunk.css"
   },
   {
     "revision": "076ac34b8b5f41e674c0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/heart-disease-detector/static/js/2.5ddc51a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7ff4d13b01d0cda111d4",
-    "url": "/heart-disease-detector/static/js/main.b5c437d3.chunk.js"
+    "revision": "91dc553a93a597bdb604",
+    "url": "/heart-disease-detector/static/js/main.dfb0a7fe.chunk.js"
   },
   {
     "revision": "49f1dbcfca1a7d625035",
