@@ -191,7 +191,7 @@ class App extends Component {
             7 : reversable defect: no proper blood movement when excercising.
           </label><hr /><br />
           <input  type="number" value={this.state.thal_value} onChange={(Event)=>{this.setState({thal_value:Event.target.value})}}></input>
-          <input type="range" className="slider" min="0" max="3" step="1" onChange={(Event)=>{this.setState({thal_value:Event.target.value})}}></input>
+          <input type="range" className="slider" min="0" max="7" step="1" onChange={(Event)=>{this.setState({thal_value:Event.target.value})}}></input>
         </fieldset>
         <div id="output">
           <span >{this.state.output}</span>
