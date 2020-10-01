@@ -60,6 +60,11 @@ hr {
   margin-left: 4%;
 }
 
+.equal {
+  padding-left: 14.5%;
+  padding-right: 14.5%;
+}
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
