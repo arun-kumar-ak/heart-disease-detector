@@ -48,10 +48,11 @@ hr {
 #button {
     margin-top: 30%;
     margin-bottom: 40%;
-    padding: 8px 30px;
+    padding: 12px 36px;
     outline: none;
-    border: none;
+    border: 1px solid whitesmoke;
     color: blanchedalmond;
+    font-size: 15px;
     font-weight: 900;
     background-image: linear-gradient(270deg, rgb(0, 133, 133),rgb(73, 68, 75));
 }
@@ -87,7 +88,7 @@ input[type=number] {
 
   .equal {
     padding-left: 36px;
-    padding-right: 37.5px;
-    width: 213px;
+    padding-right: 37px;
+    width: 210px;
   }
 }
